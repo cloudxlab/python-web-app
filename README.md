@@ -8,12 +8,14 @@ cd python-web-app
 ```
 
 ## Setup virtual env and install requirement
-```sh
+```sh    
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
 ```
+
+
 
 ## 
 ```sh
