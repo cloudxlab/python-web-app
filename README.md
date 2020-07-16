@@ -1,6 +1,5 @@
 # python-web-app
-Python web app for CI CD with Jenkins
-   
+Python web app for CI CD
 ## Clone the repo 
 ```sh
 git clone https://github.com/singh-ashok25/python-web-app.git
