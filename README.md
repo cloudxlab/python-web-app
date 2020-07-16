@@ -1,5 +1,5 @@
 # python-web-app
-Python web app for CI CD 
+Python app for CI CD 
    
 ## Clone the repo 
 ```sh
