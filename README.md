@@ -8,13 +8,18 @@ git clone https://github.com/singh-ashok25/python-web-app.git
 cd python-web-app
 ```
 
-## Setup virtual env and install requirement
+
+
+## Setup virtual env and install requirements
 ```sh    
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
 ```
+
+
+
 
 
 
