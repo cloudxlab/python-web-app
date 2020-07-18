@@ -1,4 +1,4 @@
-# python-app
+# python-web-app
 Python app for CI CD
 
 
