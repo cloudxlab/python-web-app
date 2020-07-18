@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
            steps {
                 echo 'Starting build'
-                sh "pip3 install -r requirements.txt"
+                sh "sudo pip3 install -r requirements.txt"
 
             }
         }
