@@ -21,7 +21,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Starting deployment '
-                sh "python src/app.py"
+                sh "python3 src/app.py"
             }
         }
         stage('Release') {
