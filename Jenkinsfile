@@ -21,7 +21,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Starting deployment'
-                sh "BUILD_ID=dontKillMe nohup python3 src/app.py &"
+                sh "JENKINS_NODE_COOKIE=dontKillMe nohup python3 src/app.py &"
             }
         }
         stage('Release') {
