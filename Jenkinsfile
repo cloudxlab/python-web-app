@@ -5,7 +5,7 @@ pipeline {
            steps {
                 echo 'Starting build'
                 sh "sudo yum -y install python3"
-                sh "pip3 install --upgrade pip"
+                sh "sudo pip3 install --upgrade pip"
                 sh "python3 -m venv venv"
                 sh "source venv/bin/activate"
                 sh "pip3 install -r requirements.txt"
