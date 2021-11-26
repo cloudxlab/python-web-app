@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'Starting Testing '
                 sh "export PYTHONPATH=src"
-                sh "pytest"
+                sh "/usr/local/bin/pytest"
             }
         }
         stage('Deploy') {
