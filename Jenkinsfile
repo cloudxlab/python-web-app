@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
            steps {
                 echo 'Starting build'
-                sh "pip3 --user jenkins install -r requirements.txt"
+                sh "pip3 install --user -r requirements.txt"
 
             }
         }
