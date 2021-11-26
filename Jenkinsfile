@@ -21,7 +21,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Stopping any current running app"
-                sh "nohup kill $(ps -ef | grep /src/app.py | grep -v grep | awk '{print $2}') &"
+                sh "nohup kill \$(ps -ef | grep /src/app.py | grep -v grep | awk '{print \$2}') &"
                 echo 'Starting deployment'
                 sh "JENKINS_NODE_COOKIE=dontKillMe nohup python3 src/app.py &"
             }
