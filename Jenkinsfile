@@ -5,7 +5,7 @@ pipeline {
            steps {
                 echo 'Starting build'
                 sh 'source ~/.bashrc'
-                sh "pip3 install --user -r requirements.txt"
+                sh "pip install --user -r requirements.txt"
 
             }
         }
