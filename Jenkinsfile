@@ -4,8 +4,11 @@ pipeline {
         stage('Build') {
            steps {
                 echo 'Starting build'
-                sh 'source ~/.bashrc'
-                sh "pip install -r requirements.txt"
+                sh "sudo yum -y install python3"
+                sh "pip3 install --upgrade pip"
+                sh "python3 -m venv venv"
+                sh "source venv/bin/activate"
+                sh "pip3 install -r requirements.txt"
 
             }
         }
