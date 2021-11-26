@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
            steps {
                 echo 'Starting build'
-                sh "pip3 install -r requirements.txt"
+                sh "sudo pip3 install -r requirements.txt"
 
             }
         }
@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'Starting Testing '
                 sh "export PYTHONPATH=src"
-                sh "/usr/local/bin/pytest"
+                sh "pytest"
             }
         }
         stage('Deploy') {
