@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'Starting Testing '
                 sh "export PYTHONPATH=src"
-                sh "pytest src"
+                sh "/var/lib/jenkins/.local/bin/pytest src"
             }
         }
         stage('Deploy') {
