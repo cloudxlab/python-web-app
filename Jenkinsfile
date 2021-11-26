@@ -15,6 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Starting Testing'
+                sh "source ~/bashrc"
                 sh "pytest"
             }
         }
