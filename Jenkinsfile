@@ -16,6 +16,8 @@ pipeline {
             steps {
                 echo 'Starting Testing'
                 sh "source ~/.bashrc"
+                sh "echo $PATH"
+                sh "which pytest"
                 sh "pytest"
             }
         }
