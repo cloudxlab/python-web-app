@@ -15,7 +15,6 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Starting Testing '
-                sh "/var/lib/jenkins/.local/bin/pytest"
             }
         }
         stage('Deploy') {
