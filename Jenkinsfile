@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Starting Testing '
-                sh "/var/lib/jenkins/.local/bin/pytest src/"
+                sh "/var/lib/jenkins/.local/bin/pytest tests/"
             }
         }
         stage('Deploy') {
