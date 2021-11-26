@@ -14,13 +14,14 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Starting Testing '
+                echo 'Starting Testing'
+                sh "pytest"
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Starting deployment '
-                sh "python3 src/app.py"
+                echo 'Starting deployment'
+                sh "BUILD_ID=pywebapp nohup python3 src/app.py &"
             }
         }
         stage('Release') {
