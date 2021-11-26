@@ -21,7 +21,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Starting deployment'
-                sh "BUILD_ID=pywebapp nohup python3 src/app.py &"
+                sh "BUILD_ID=dontKillMe nohup python3 src/app.py &"
             }
         }
         stage('Release') {
