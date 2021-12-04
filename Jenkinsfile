@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Starting Testing'
-                sh ". ~/.bashrc; pytest"
+                sh ". ~/.bashrc; /var/lib/jenkins/.local/bin/pytest"
             }
         }
         stage('Deploy') {
