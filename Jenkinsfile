@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Starting Testing'
-                sh 'echo "/var/lib/jenkins/.local/bin/pytest" >> ~/.bashrc'
+                sh 'echo "PATH=$PATH:/var/lib/jenkins/.local/bin/pytest" >> ~/.bashrc'
                 sh ". ~/.bashrc; pytest"
             }
         }
