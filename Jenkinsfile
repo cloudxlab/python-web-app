@@ -15,6 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Starting Testing'
+                sh ". ~/.bashrc; pytest"
             }
         }
         stage('Deploy') {
